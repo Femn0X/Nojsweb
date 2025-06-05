@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cool Static Web</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My Cool Site</h1>
+        <p class="subtitle">A modern, stylish static web page with no JavaScript.</p>
+        <label class="dark-toggle">
+            <input type="checkbox" id="darkSwitch"><span>🌙 Dark Mode</span>
+        </label>
+        <div class="divider"></div>
+
+        <div class="card">
+            <h2>About</h2>
+            <p>This site uses only HTML and CSS, but still looks awesome!</p>
+            <ul>
+                <li>✨ Glassmorphism card</li>
+                <li>🌈 Vibrant animated gradient background</li>
+                <li>📱 Responsive design</li>
+                <li>🎨 Fun to customize!</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Features</h2>
+            <ul>
+                <li>🔥 Neon text effects</li>
+                <li>🚀 Smooth card hover animation</li>
+                <li>🟣 Custom list icons</li>
+                <li>🌙 Ready for dark mode (just add CSS!)</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Get Inspired</h2>
+            <p>Try editing the CSS to:</p>
+            <ul>
+                <li>Change the gradient colors</li>
+                <li>Add more cards or sections</li>
+                <li>Experiment with glass and blur effects</li>
+                <li>Make your own unique style!</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>Made with ❤️ and CSS &mdash; <a href="https://github.com/" target="_blank">View Source</a></p>
+    </footer>
+    <script>
+        // Dark mode toggle
+        const darkSwitch = document.getElementById('darkSwitch');
+        darkSwitch.addEventListener('change', () => {
+            document.body.classList.toggle('dark', this.checked);
+        });
+    </script>
+</body>
+</html>
